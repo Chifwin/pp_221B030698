@@ -15,4 +15,4 @@ for i in range(int(input())):
     if is_strong_pass(c) and c not in a:
         a.append(c)
 
-print(len(a), *a, sep="\n")
+print(len(a), *sorted(a), sep="\n")

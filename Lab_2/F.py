@@ -9,6 +9,6 @@ m = max(com.values())
 for i in sorted(com.keys()):
     print(i, end=" ")
     if com[i] == m:
-        print("is lucky")
+        print("is lucky!")
     else:
-        print(f"has to recieve {m - com[i]} tenge")
+        print(f"has to receive {m - com[i]} tenge")

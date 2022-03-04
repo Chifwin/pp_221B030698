@@ -6,7 +6,7 @@ class IO:
         self.__s = input()
 
     def printString(self):
-        print(self.__s)
+        print(self.__s.upper())
 
 
 if __name__ == "__main__":

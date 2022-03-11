@@ -1,5 +1,7 @@
 import re
 
-pattern = r"[., ]"
+def reg(s):
+    return re.sub(r"[., ]", ":", s)
+
 for i in ("ag,b,b.b", "aa, a.SD ASb", "ad,db, ads Sb jA"):
-    print(i, ":", re.sub(pattern, ':', i))
+    print(i, ":", reg(i))

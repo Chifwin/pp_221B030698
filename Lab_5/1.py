@@ -1,6 +1,8 @@
 import re
 
-pattern = r"ab*"
+def reg(s):
+    return re.match(r"ab*", s)
+
 for i in ("gbbb", "a ab abbb abbbs", "abbb abbbs"):
-    res = re.match(pattern, i)
+    res = reg(i)
     print(i, ":", res[0] if res else "Not founded")

@@ -1,5 +1,7 @@
 import re
 
-pattern = r"([A-Z])"
+def reg(s):
+    return re.sub(r"([A-Z])", r" \1", s)
+
 for i in ("agbbbDe", "aaahyAhb", "addbAwerFrG54"):
-    print(i, ":", re.sub(pattern, r" \1", i))
+    print(i, ":", reg(i))

@@ -1,6 +1,7 @@
 import re
 
-pattern = r"a[.|\D]*b"
+def reg(s):
+    return re.findall(r"a[.|\D]*b", s)
+
 for i in ("agbbb", "aaaSD ASb", "addb adsSb jA"):
-    res = re.findall(pattern, i)
-    print(i, ":", res)
+    print(i, ":", ", ".join(reg(i)))

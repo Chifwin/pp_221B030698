@@ -47,6 +47,6 @@ while not done:
     rotate(screen, mickey_left_hand, datetime.now().minute*6, BIAS, MICKEY_LEFT_HAND_OFFSET)
     pygame.display.set_caption(f'Minutes: {datetime.now().minute}, seconds: {datetime.now().second}')
     pygame.display.flip()
-    clock.tick(1)
+    clock.tick(60)
 
 pygame.quit()

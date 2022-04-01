@@ -11,7 +11,7 @@ Stop/restart:   escape""")
 FORMATS = ["flac", 'mp3', 'ogg', 'm4a']
 
 while True:
-    directory = r"C:\Users\Oleg\Music\初音ミクシンフォニー～Miku Symphony 2020 オーケストラライブ (24-96)" #input("From which folder you want to listen music? ")
+    directory = input("From which folder you want to listen music? ")
     try:
         songs = [x for x in os.listdir(directory) if not os.path.isdir(rf"{directory}\{x}") and x.split('.')[-1] in FORMATS]
     except FileNotFoundError:

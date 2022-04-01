@@ -40,7 +40,7 @@ while not done:
         if event.type == pygame.QUIT:
             done = True
     
-    screen.fill((255, 0, 255))
+    screen.fill((255, 255, 255))
     screen.blit(mickey_body, (0, 0))
 
     rotate(screen, mickey_right_hand, datetime.now().second*6, BIAS, MICKEY_RIGHT_HAND_OFFSET)
